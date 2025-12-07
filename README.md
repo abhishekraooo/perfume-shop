@@ -33,7 +33,7 @@ A responsive, full-stack e-commerce application built with the MERN stack (Mongo
 ## Application Screenshots
 ![Homepage](./screenshots/heropage.png)
 
-![Products](./screenshots/productpage (3).png)
+![Products](./screenshots/productpage(3).png)
 
 
 
