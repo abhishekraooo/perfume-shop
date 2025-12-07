@@ -1,0 +1,128 @@
+/* Container */
+.catalog-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Header */
+.catalog-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.catalog-header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+/* Filter Bar */
+.filter-bar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 10px 25px;
+  border: 1px solid #e0e0e0;
+  background: white;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.filter-btn:hover {
+  border-color: #333;
+  color: #333;
+}
+
+.filter-btn.active {
+  background: #333;
+  color: white;
+  border-color: #333;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* The Grid */
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 40px;
+}
+
+/* Premium Card Design */
+.product-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.card-img-wrapper {
+  height: 320px;
+  overflow: hidden;
+  background: #f9f9f9;
+  position: relative;
+}
+
+.product-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+/* Zoom Effect on Hover */
+.product-card:hover img {
+  transform: scale(1.1);
+}
+
+.card-details {
+  padding: 25px;
+  text-align: center;
+}
+
+.card-brand {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #999;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.card-name {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 5px 0 10px 0;
+  color: #222;
+}
+
+.card-price {
+  font-weight: 600;
+  color: #c5a059; /* Luxury Gold Color */
+  font-size: 1.1rem;
+}
