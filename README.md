@@ -29,3 +29,11 @@ A responsive, full-stack e-commerce application built with the MERN stack (Mongo
 - Frontend: React.js, CSS3 (Grid/Flexbox)
 - Backend: Node.js, Express.js
 - Database: MongoDB Atlas (Cloud)
+
+## Application Screenshots
+![Homepage](./screenshots/heropage.png)
+
+![Products](./screenshots/productpage (3).png)
+
+
+
